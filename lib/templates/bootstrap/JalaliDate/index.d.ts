@@ -1,6 +1,4 @@
 declare const _default: {
-    jalaliDate: {
-        form: string;
-    };
+    form: string;
 };
 export default _default;

@@ -1,6 +1,6 @@
 declare const _default: {
     bootstrap: {
-        checkmatrix: {
+        jalaliDate: {
             form: string;
         };
     };

@@ -1,5 +1,5 @@
-import checkmatrix from './checkmatrix';
+import jalaliDate from './JalaliDate';
 
 export default {
-  checkmatrix
+  jalaliDate
 };

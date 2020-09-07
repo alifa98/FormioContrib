@@ -1,10 +1,10 @@
 declare const _default: {
     components: {
-        checkmatrix: typeof import("./components/CheckMatrix/CheckMatrix").default;
+        jalaliDate: typeof import("./components/JalaliDate/JalaliDate").default;
     };
     templates: {
         bootstrap: {
-            checkmatrix: {
+            jalaliDate: {
                 form: string;
             };
         };

@@ -1,5 +1,5 @@
-import checkmatrix from './CheckMatrix/CheckMatrix';
+import jalaliDate from './JalaliDate/JalaliDate';
 declare const _default: {
-    checkmatrix: typeof checkmatrix;
+    jalaliDate: typeof jalaliDate;
 };
 export default _default;
