@@ -1,14 +1,13 @@
 let dateFormats = [
-  { label: 'یکشنبه ۱۶ شهریور ۹۹', value: 'ddd D MMMM YY' },
-  { label: 'یکشنبه ۱۶ شهریور ۱۳۹۹', value: 'ddd D MMMM YYYY' },
+  { label: 'یکشنبه ۱۶ شهریور ۹۹', value: 'dddd D MMMM YY' },
+  { label: 'یکشنبه ۱۶ شهریور ۱۳۹۹', value: 'dddd D MMMM YYYY' },
   { label: '۱۶ شهریور ۹۹', value: 'D MMMM YY' },
-  { label: 'یکشنبه ۱۶ شهریور', value: 'ddd D MMMM' },
+  { label: 'یکشنبه ۱۶ شهریور', value: 'dddd D MMMM' },
   { label: '۱۳۹۹/۰۶/۱۶', value: 'YYYY/MM/DD' },
   { label: '۹۹/۰۶/۱۶', value: 'YY/MM/DD' },
   { label: '۱۳۹۹-۰۶-۱۶', value: 'YYYY-MM-DD' },
   { label: '۹۹-۰۶-۱۶', value: 'YY-MM-DD' }
 ];
-
 
 export default [
   {
@@ -37,6 +36,10 @@ export default [
   },
   {
     key: 'tabindex',
+    ignore: true
+  },
+  {
+    key: 'disabled',
     ignore: true
   },
   {
