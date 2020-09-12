@@ -1,7 +1,7 @@
 import { Components } from 'formiojs';
 const FieldComponent = (Components as any).components.field;
 import editForm from './JalaliDate.form';
-
+import dateFormats from './editForm/formatConfig'
 
 export default class JalaliDate extends (FieldComponent as any) {
 
@@ -11,7 +11,10 @@ export default class JalaliDate extends (FieldComponent as any) {
 
   static schema() {
     return FieldComponent.schema({
-      type: 'jalaliDate'
+      type: 'jalaliDate',
+      outputDateFormat: dateFormats[0].value, // Default value
+      inputDateFormat: dateFormats[0].value, // Default value
+      hasTime: false // Default value
     });
   }
 
@@ -37,10 +40,11 @@ export default class JalaliDate extends (FieldComponent as any) {
   }
 
   public render(children) {
+
     return super.render(this.renderTemplate('jalaliDate', {
       classes: this.classes,
       inputKeyName: this.getInputName,
-
+      showingFormat: dateFormats.find(formatSelectEntry => formatSelectEntry.value == this.component.inputDateFormat).datePickerFormat,
     }));
   }
 }

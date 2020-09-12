@@ -20,6 +20,7 @@ declare const _default: ({
         values: {
             label: string;
             value: string;
+            datePickerFormat: string;
         }[];
     };
     defaultValue: string;

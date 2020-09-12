@@ -1,2 +1,7 @@
-<input class="{{ ctx.classes }}" data-hasTime="{{ ctx.component.hasTime }}" data-inputFormat="{{ ctx.component.inputDateFormat }}" data-outputFormat="{{ ctx.component.outputDateFormat }}"
-    name="{{ ctx.inputKeyName }}" type="text" />
+<input class="{{ ctx.classes }}"
+    data-hasTime="{{ ctx.component.hasTime }}"
+    data-showingFormat="{{ ctx.showingFormat }} {{ ctx.component.hasTime? 'HH:mm':'' }}"
+    data-inputFormat="{{ ctx.component.inputDateFormat }} {{ ctx.component.hasTime? 'HH:mm':'' }}"
+    data-outputFormat="{{ ctx.component.outputDateFormat }} {{ ctx.component.hasTime? 'HH:mm':'' }}"
+    name="{{ ctx.inputKeyName }}"
+    type="text" />

@@ -1,14 +1,4 @@
-let dateFormats = [
-  { label: 'یکشنبه ۱۶ شهریور ۹۹', value: 'dddd D MMMM YY' },
-  { label: 'یکشنبه ۱۶ شهریور ۱۳۹۹', value: 'dddd D MMMM YYYY' },
-  { label: '۱۶ شهریور ۹۹', value: 'D MMMM YY' },
-  { label: 'یکشنبه ۱۶ شهریور', value: 'dddd D MMMM' },
-  { label: '۱۳۹۹/۰۶/۱۶', value: 'YYYY/MM/DD' },
-  { label: '۹۹/۰۶/۱۶', value: 'YY/MM/DD' },
-  { label: '۱۳۹۹-۰۶-۱۶', value: 'YYYY-MM-DD' },
-  { label: '۹۹-۰۶-۱۶', value: 'YY-MM-DD' }
-];
-
+import dateFormats from './formatConfig'
 export default [
   {
     key: 'labelPosition',
